@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-background border-t pt-20 pb-10">
+    <footer className="bg-background border-t pt-20 pb-10 mt-auto">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-4 gap-12 mb-20">
           <div className="lg:col-span-2 space-y-8">
@@ -18,15 +18,21 @@ export function Footer() {
             <p className="text-muted-foreground font-body leading-relaxed max-w-md">
               Arcitan is a global architectural restoration and artisan foundation dedicated to the preservation of history through master craftsmanship and architectural research.
             </p>
-            <p className="text-accent italic font-headline text-lg italic">"Reviving Heritage. Crafting the Future."</p>
+            <p className="text-accent italic font-headline text-lg">"Reviving Heritage. Crafting the Future."</p>
           </div>
 
           <div className="space-y-6">
             <h4 className="text-[11px] uppercase tracking-[0.3em] font-bold text-primary">Navigation</h4>
             <ul className="space-y-4">
-              {["Home", "About", "Mission", "Projects", "Restoration Services"].map(link => (
-                <li key={link}>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">{link}</Link>
+              {[
+                { name: "Home", href: "/" },
+                { name: "About", href: "/about" },
+                { name: "Mission", href: "/mission" },
+                { name: "Projects", href: "/projects" },
+                { name: "Services", href: "/services" }
+              ].map(link => (
+                <li key={link.name}>
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-accent transition-colors">{link.name}</Link>
                 </li>
               ))}
             </ul>
@@ -35,9 +41,15 @@ export function Footer() {
           <div className="space-y-6">
             <h4 className="text-[11px] uppercase tracking-[0.3em] font-bold text-primary">Connect</h4>
             <ul className="space-y-4">
-              {["Journal", "Partnerships", "Contact", "Foundation", "Archives"].map(link => (
-                <li key={link}>
-                  <Link href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">{link}</Link>
+              {[
+                { name: "Journal", href: "/journal" },
+                { name: "Partnerships", href: "#" },
+                { name: "Contact", href: "/contact" },
+                { name: "Foundation", href: "#" },
+                { name: "Archives", href: "#" }
+              ].map(link => (
+                <li key={link.name}>
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-accent transition-colors">{link.name}</Link>
                 </li>
               ))}
             </ul>
