@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { PlaceHolderImages } from "@/app/lib/placeholder-images";
 import { ChevronRight } from "lucide-react";
 
@@ -9,28 +10,33 @@ export function Services() {
     {
       title: "Restoration & Preservation",
       desc: "Careful restoration of churches, monuments, civic buildings, and culturally significant architecture.",
-      img: PlaceHolderImages?.find(i => i.id === "service-restoration")?.imageUrl
+      img: PlaceHolderImages?.find(i => i.id === "service-restoration")?.imageUrl,
+      slug: "restoration",
     },
     {
       title: "Artisan Craftsmanship",
       desc: "Stonework, woodwork, masonry, decorative restoration, and handcrafted architectural detailing.",
-      img: PlaceHolderImages?.find(i => i.id === "service-craftsmanship")?.imageUrl
+      img: PlaceHolderImages?.find(i => i.id === "service-craftsmanship")?.imageUrl,
+      slug: "craftsmanship",
     },
     {
       title: "Architectural Research",
       desc: "Historical studies, preservation documentation, structural analysis, and heritage consulting.",
-      img: PlaceHolderImages?.find(i => i.id === "service-research")?.imageUrl
+      img: PlaceHolderImages?.find(i => i.id === "service-research")?.imageUrl,
+      slug: "research",
     },
     {
       title: "Sustainable Restoration",
       desc: "Combining traditional building methods with modern sustainability and resilience practices.",
-      img: PlaceHolderImages?.find(i => i.id === "project-monument")?.imageUrl
+      img: PlaceHolderImages?.find(i => i.id === "project-monument")?.imageUrl,
+      slug: "sustainable",
     },
     {
       title: "Bespoke Architectural Design",
       desc: "Designing timeless structures inspired by classical architecture and enduring craftsmanship.",
-      img: PlaceHolderImages?.find(i => i.id === "project-contemporary")?.imageUrl
-    }
+      img: PlaceHolderImages?.find(i => i.id === "project-contemporary")?.imageUrl,
+      slug: "bespoke",
+    },
   ];
 
   return (
@@ -63,9 +69,12 @@ export function Services() {
                 <h3 className="text-2xl font-headline group-hover:text-accent transition-colors">{service.title}</h3>
                 <p className="text-white/60 font-body text-sm leading-relaxed">{service.desc}</p>
                 
-                <button className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold group-hover:translate-x-2 transition-transform">
+                <Link
+                  href={`/services/${service.slug}`}
+                  className="flex items-center gap-2 text-[10px] uppercase tracking-widest font-bold group-hover:translate-x-2 transition-transform"
+                >
                   Explore Service <ChevronRight className="w-4 h-4 text-accent" />
-                </button>
+                </Link>
               </div>
 
               {/* Hover Image Reveal */}

@@ -15,14 +15,14 @@
     --primary-foreground: 0 0% 98%;
     --secondary: 20 62% 61%; /* #D9885C - Brass/Terracotta */
     --secondary-foreground: 0 0% 98%;
-    --muted: 28 5% 90%;
-    --muted-foreground: 28 10% 40%;
+    --muted: 28 22% 88%;
+    --muted-foreground: 28 22% 38%;
     --accent: 20 62% 61%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 28 10% 85%;
-    --input: 28 10% 85%;
+    --border: 28 22% 82%;
+    --input: 28 22% 82%;
     --ring: 28 10% 21%;
     --radius: 0.125rem;
   }

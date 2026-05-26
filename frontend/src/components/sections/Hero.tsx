@@ -26,7 +26,7 @@ export function Hero() {
         <div className="max-w-4xl space-y-8">
           <div className="space-y-4">
             <span className="inline-block text-accent uppercase tracking-[0.5em] text-xs font-bold animate-in fade-in slide-in-from-bottom-4 duration-1000">
-              Arcitan Foundation
+              Architecture Meets Artisanship
             </span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-headline text-white leading-[1.1] animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
               Reviving the World's <br />

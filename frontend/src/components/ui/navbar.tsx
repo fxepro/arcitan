@@ -55,10 +55,10 @@ export function Navbar() {
             Arcitan
           </span>
           <span className={cn(
-            "text-[10px] uppercase tracking-[0.4em] font-body mt-1 opacity-70 group-hover:text-accent transition-colors",
+            "text-[10px] tracking-[0.15em] font-body mt-1 opacity-70 group-hover:text-accent transition-colors italic",
             !scrolled && isHome ? "text-white/70" : "text-primary/70"
           )}>
-            Restorations
+            where architecture meets artisanship
           </span>
         </Link>
 
@@ -86,8 +86,8 @@ export function Navbar() {
             className={cn(
               "rounded-none px-6 text-[11px] uppercase tracking-widest h-10 transition-all",
               !scrolled && isHome 
-                ? "border-white text-white hover:bg-white hover:text-primary" 
-                : "border-primary text-primary hover:bg-primary hover:text-white"
+                ? "border-white text-white hover:bg-white hover:text-primary bg-transparent" 
+                : "border-primary text-primary hover:bg-primary hover:text-white bg-transparent"
             )}
           >
             Partnerships

@@ -14,7 +14,7 @@ export default function Home() {
       <About />
       
       {/* Home Page Mission Snippet */}
-      <section className="py-24 bg-white border-y relative">
+      <section className="py-24 bg-[#F5EFE6] border-y relative">
         <div className="container mx-auto px-6 text-center max-w-4xl">
           <span className="text-accent uppercase tracking-[0.4em] text-xs font-bold block mb-6">Our Mission</span>
           <h2 className="text-4xl md:text-5xl font-headline mb-8">Preserving History Through Architecture</h2>

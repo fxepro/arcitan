@@ -11,7 +11,7 @@ export function FutureVision() {
   ];
 
   return (
-    <section className="py-24 lg:py-40 bg-white relative">
+    <section className="py-24 lg:py-40 bg-[#F5EFE6] relative">
       <div className="container mx-auto px-6 text-center max-w-4xl">
         <span className="text-accent uppercase tracking-[0.5em] text-xs font-bold block mb-6">Global Impact</span>
         <h2 className="text-4xl md:text-5xl lg:text-7xl font-headline mb-10">Building a Global Restoration Movement</h2>
